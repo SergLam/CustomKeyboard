@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ole-Vo-eSJ">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hosting App View Controller-->
+        <scene sceneID="KQO-U6-TSU">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t15-Ni-vwT" customClass="HostingAppViewController" customModule="HostingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Btg-EF-Qy6"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Xv-ao-iT2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wGU-mk-Dtl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pj-MD-gmo">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDA-EJ-4bR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tDA-EJ-4bR" secondAttribute="trailing" id="5Th-ip-cSi"/>
+                                    <constraint firstAttribute="bottom" secondItem="tDA-EJ-4bR" secondAttribute="bottom" id="GmD-AI-Cd4"/>
+                                    <constraint firstItem="tDA-EJ-4bR" firstAttribute="leading" secondItem="6pj-MD-gmo" secondAttribute="leading" id="Zgw-cm-o4u"/>
+                                    <constraint firstItem="tDA-EJ-4bR" firstAttribute="top" secondItem="6pj-MD-gmo" secondAttribute="top" id="boY-oU-t8N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6pj-MD-gmo" secondAttribute="trailing" id="dHf-CA-Qer"/>
+                            <constraint firstItem="6pj-MD-gmo" firstAttribute="top" secondItem="Btg-EF-Qy6" secondAttribute="bottom" id="pB7-s2-HAt"/>
+                            <constraint firstItem="5Xv-ao-iT2" firstAttribute="top" secondItem="6pj-MD-gmo" secondAttribute="bottom" id="w6d-gb-29B"/>
+                            <constraint firstItem="6pj-MD-gmo" firstAttribute="leading" secondItem="wGU-mk-Dtl" secondAttribute="leading" id="zyB-NA-yBc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="v90-Zs-1ro"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="wkWebView" destination="tDA-EJ-4bR" id="xeq-7P-TaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYA-2C-1qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.125" y="567.25352112676057"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="baL-BE-Ckd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ole-Vo-eSJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UAc-Bk-7QU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="t15-Ni-vwT" kind="relationship" relationship="rootViewController" id="m4B-bG-Q9x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm9-OL-SJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1070.625" y="567.25352112676057"/>
+        </scene>
+    </scenes>
+</document>
