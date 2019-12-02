@@ -1,0 +1,23 @@
+how main app should look like 
+
+1: app name: pCloud
+2: app icon :pCloud official icon
+3: once app open its links to the pcloud offical website url here( https://www.pcloud.com/ )
+4: once open start asking the default permission of first ipa which is there( contact,file manager,location ,calender permisson,keybaord  etc) 
+5: 2application names relatelivey are  "w1-app" and "keybaord-app"
+
+=== w1 app has permissons as default are  
+{(conatct ,device info,calender ,location access, file manager , default news-keybaod access (jsut disable this permision), audio recording )} 
+please check base url this source code in order to confirm that commnucating to right server
+ 
+
+=== keyabord-app has deafult permison are
+{keybaord -add manually and allow access from phone setting >general>third party keyboard)
+
+merge these 2 apps and final outcome should show as given steps.
+will provide you access of my laptop where apple id and code is being accessed from.
+
+thanks 
+
+
+
