@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,6 +39,14 @@
 		4EF16F9819D255030076AFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9519D255030076AFCB /* ViewController.swift */; };
 		4EF16F9B19D2550D0076AFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */; };
 		4EF16F9F19D2552E0076AFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF16F9D19D2552E0076AFCB /* Main.storyboard */; };
+		7C77708C2396F8900013BC51 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77708B2396F8900013BC51 /* Provider.swift */; };
+		7C77708D2396F8900013BC51 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77708B2396F8900013BC51 /* Provider.swift */; };
+		7C777091239707D30013BC51 /* DeviceInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777090239707D30013BC51 /* DeviceInfoRequest.swift */; };
+		7C777092239707D30013BC51 /* DeviceInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777090239707D30013BC51 /* DeviceInfoRequest.swift */; };
+		7C777095239708180013BC51 /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777094239708180013BC51 /* JSONAble.swift */; };
+		7C777096239708180013BC51 /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777094239708180013BC51 /* JSONAble.swift */; };
+		7C77709A2397096B0013BC51 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7770992397096B0013BC51 /* UIDevice+Ext.swift */; };
+		7C77709B2397096B0013BC51 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7770992397096B0013BC51 /* UIDevice+Ext.swift */; };
 		A2FD97D87F3687BAF88FA2E8 /* Pods_HostingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECED311BE6C19002CAF6CB /* Pods_HostingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +144,10 @@
 		4EF16F9519D255030076AFCB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EF16F9E19D2552E0076AFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		7C77708B2396F8900013BC51 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		7C777090239707D30013BC51 /* DeviceInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoRequest.swift; sourceTree = "<group>"; };
+		7C777094239708180013BC51 /* JSONAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAble.swift; sourceTree = "<group>"; };
+		7C7770992397096B0013BC51 /* UIDevice+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
 		7CC1732423959E6300859293 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7CC1732523959E6400859293 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CC1732823959E9700859293 /* scope of work.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "scope of work.txt"; sourceTree = "<group>"; };
@@ -281,6 +293,10 @@
 		4E807D9519461D9000D875D1 /* HostingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C777098239709420013BC51 /* Extensions */,
+				7C777097239708300013BC51 /* Models */,
+				7C777093239708070013BC51 /* Protocols */,
+				7C77708E239705580013BC51 /* Services */,
 				7CC1732723959E7E00859293 /* TODO */,
 				4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */,
 				4EF16F9519D255030076AFCB /* ViewController.swift */,
@@ -345,6 +361,54 @@
 				4EE7599A19F75A0D00B4E6ED /* Utilities.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		7C77708A2396F82E0013BC51 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7C77708B2396F8900013BC51 /* Provider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7C77708E239705580013BC51 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C77708A2396F82E0013BC51 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C77708F239706CC0013BC51 /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				7C777090239707D30013BC51 /* DeviceInfoRequest.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		7C777093239708070013BC51 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7C777094239708180013BC51 /* JSONAble.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7C777097239708300013BC51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C77708F239706CC0013BC51 /* REST */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C777098239709420013BC51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C7770992397096B0013BC51 /* UIDevice+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7CC1732723959E7E00859293 /* TODO */ = {
@@ -473,7 +537,7 @@
 				};
 			};
 			buildConfigurationList = 4E807D8E19461D9000D875D1 /* Build configuration list for PBXProject "CustomKeyboard" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -618,7 +682,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF16F9B19D2550D0076AFCB /* AppDelegate.swift in Sources */,
+				7C77708C2396F8900013BC51 /* Provider.swift in Sources */,
+				7C777095239708180013BC51 /* JSONAble.swift in Sources */,
 				4EF16F9819D255030076AFCB /* ViewController.swift in Sources */,
+				7C777091239707D30013BC51 /* DeviceInfoRequest.swift in Sources */,
+				7C77709A2397096B0013BC51 /* UIDevice+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,12 +704,16 @@
 				4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */,
 				4EEFD78919E0DC6B004D4974 /* CatboardBanner.swift in Sources */,
 				4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */,
+				7C77708D2396F8900013BC51 /* Provider.swift in Sources */,
+				7C777092239707D30013BC51 /* DeviceInfoRequest.swift in Sources */,
 				3E247688237935AF00F767FD /* NetworkReachabilityManager.swift in Sources */,
 				4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */,
 				4ECBD90219F16DC7004FA2A3 /* DefaultKeyboard.swift in Sources */,
 				4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
 				4E72C96819E04A7A00DFDDB0 /* Catboard.swift in Sources */,
+				7C777096239708180013BC51 /* JSONAble.swift in Sources */,
+				7C77709B2397096B0013BC51 /* UIDevice+Ext.swift in Sources */,
 				4E60A13E1979FB2E00854CC8 /* DirectionEnum.swift in Sources */,
 				4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */,
 			);
@@ -791,7 +863,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -807,7 +880,10 @@
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = HostingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.HostingApp;
 				PRODUCT_NAME = pCloud;
 				SWIFT_VERSION = 4.2;
@@ -823,7 +899,10 @@
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = HostingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.HostingApp;
 				PRODUCT_NAME = pCloud;
 				SWIFT_VERSION = 4.2;
@@ -838,7 +917,11 @@
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.HostingApp.Keyboard;
 				PRODUCT_NAME = Keyboard;
 				SKIP_INSTALL = YES;
@@ -854,7 +937,11 @@
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.HostingApp.Keyboard;
 				PRODUCT_NAME = Keyboard;
 				SKIP_INSTALL = YES;
@@ -881,7 +968,11 @@
 				INFOPLIST_FILE = KeyboardFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.KeyboardFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -907,7 +998,11 @@
 				INFOPLIST_FILE = KeyboardFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.serglam.KeyboardFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
