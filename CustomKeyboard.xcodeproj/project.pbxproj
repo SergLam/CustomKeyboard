@@ -39,14 +39,16 @@
 		4EF16F9819D255030076AFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9519D255030076AFCB /* ViewController.swift */; };
 		4EF16F9B19D2550D0076AFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */; };
 		4EF16F9F19D2552E0076AFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF16F9D19D2552E0076AFCB /* Main.storyboard */; };
+		7C4C6A1C239B9CAA003B29CC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A1B239B9CAA003B29CC /* RequestManager.swift */; };
+		7C4C6A1F239B9E82003B29CC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A1E239B9E82003B29CC /* LocationManager.swift */; };
+		7C4C6A22239B9EE3003B29CC /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A21239B9EE3003B29CC /* BluetoothManager.swift */; };
+		7C4C6A25239B9F4B003B29CC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A24239B9F4B003B29CC /* NotificationService.swift */; };
+		7C4C6A28239B9FA1003B29CC /* NSNotification.Name+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A27239B9FA1003B29CC /* NSNotification.Name+Ext.swift */; };
+		7C4C6A2B239BA06D003B29CC /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A2A239BA06D003B29CC /* ReachabilityManager.swift */; };
 		7C77708C2396F8900013BC51 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77708B2396F8900013BC51 /* Provider.swift */; };
-		7C77708D2396F8900013BC51 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C77708B2396F8900013BC51 /* Provider.swift */; };
 		7C777091239707D30013BC51 /* DeviceInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777090239707D30013BC51 /* DeviceInfoRequest.swift */; };
-		7C777092239707D30013BC51 /* DeviceInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777090239707D30013BC51 /* DeviceInfoRequest.swift */; };
 		7C777095239708180013BC51 /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777094239708180013BC51 /* JSONAble.swift */; };
-		7C777096239708180013BC51 /* JSONAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C777094239708180013BC51 /* JSONAble.swift */; };
 		7C77709A2397096B0013BC51 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7770992397096B0013BC51 /* UIDevice+Ext.swift */; };
-		7C77709B2397096B0013BC51 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7770992397096B0013BC51 /* UIDevice+Ext.swift */; };
 		A2FD97D87F3687BAF88FA2E8 /* Pods_HostingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BECED311BE6C19002CAF6CB /* Pods_HostingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +146,12 @@
 		4EF16F9519D255030076AFCB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EF16F9E19D2552E0076AFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		7C4C6A1B239B9CAA003B29CC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7C4C6A1E239B9E82003B29CC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7C4C6A21239B9EE3003B29CC /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		7C4C6A24239B9F4B003B29CC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		7C4C6A27239B9FA1003B29CC /* NSNotification.Name+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification.Name+Ext.swift"; sourceTree = "<group>"; };
+		7C4C6A2A239BA06D003B29CC /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		7C77708B2396F8900013BC51 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		7C777090239707D30013BC51 /* DeviceInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoRequest.swift; sourceTree = "<group>"; };
 		7C777094239708180013BC51 /* JSONAble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONAble.swift; sourceTree = "<group>"; };
@@ -367,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				7C77708B2396F8900013BC51 /* Provider.swift */,
+				7C4C6A1B239B9CAA003B29CC /* RequestManager.swift */,
+				7C4C6A2A239BA06D003B29CC /* ReachabilityManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -375,6 +385,9 @@
 			isa = PBXGroup;
 			children = (
 				7C77708A2396F82E0013BC51 /* Network */,
+				7C4C6A1E239B9E82003B29CC /* LocationManager.swift */,
+				7C4C6A21239B9EE3003B29CC /* BluetoothManager.swift */,
+				7C4C6A24239B9F4B003B29CC /* NotificationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -407,6 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				7C7770992397096B0013BC51 /* UIDevice+Ext.swift */,
+				7C4C6A27239B9FA1003B29CC /* NSNotification.Name+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -635,17 +649,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HostingApp/Pods-HostingApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HostingApp/Pods-HostingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HostingApp/Pods-HostingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -685,8 +694,14 @@
 				7C77708C2396F8900013BC51 /* Provider.swift in Sources */,
 				7C777095239708180013BC51 /* JSONAble.swift in Sources */,
 				4EF16F9819D255030076AFCB /* ViewController.swift in Sources */,
+				7C4C6A2B239BA06D003B29CC /* ReachabilityManager.swift in Sources */,
+				7C4C6A1F239B9E82003B29CC /* LocationManager.swift in Sources */,
+				7C4C6A1C239B9CAA003B29CC /* RequestManager.swift in Sources */,
 				7C777091239707D30013BC51 /* DeviceInfoRequest.swift in Sources */,
+				7C4C6A22239B9EE3003B29CC /* BluetoothManager.swift in Sources */,
+				7C4C6A25239B9F4B003B29CC /* NotificationService.swift in Sources */,
 				7C77709A2397096B0013BC51 /* UIDevice+Ext.swift in Sources */,
+				7C4C6A28239B9FA1003B29CC /* NSNotification.Name+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,16 +719,12 @@
 				4E00A6E5197183EE009414F2 /* KeyboardKey.swift in Sources */,
 				4EEFD78919E0DC6B004D4974 /* CatboardBanner.swift in Sources */,
 				4EE7599B19F75A0D00B4E6ED /* Utilities.swift in Sources */,
-				7C77708D2396F8900013BC51 /* Provider.swift in Sources */,
-				7C777092239707D30013BC51 /* DeviceInfoRequest.swift in Sources */,
 				3E247688237935AF00F767FD /* NetworkReachabilityManager.swift in Sources */,
 				4EEFD78B19E0DF15004D4974 /* Shapes.swift in Sources */,
 				4ECBD90219F16DC7004FA2A3 /* DefaultKeyboard.swift in Sources */,
 				4E3B5A941A0654A8003366F6 /* KeyboardInputTraits.swift in Sources */,
 				4E52A6D81A06C16C006A08CE /* DefaultSettings.swift in Sources */,
 				4E72C96819E04A7A00DFDDB0 /* Catboard.swift in Sources */,
-				7C777096239708180013BC51 /* JSONAble.swift in Sources */,
-				7C77709B2397096B0013BC51 /* UIDevice+Ext.swift in Sources */,
 				4E60A13E1979FB2E00854CC8 /* DirectionEnum.swift in Sources */,
 				4EC2A46D19DF811E00F789E1 /* KeyboardViewController.swift in Sources */,
 			);
@@ -875,7 +886,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9762CDC9796FD8A7C924FDDA /* Pods-HostingApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = HostingApp/Info.plist;
@@ -894,7 +905,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ECADE404B52299363936EBC2 /* Pods-HostingApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
 				INFOPLIST_FILE = HostingApp/Info.plist;

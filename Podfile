@@ -4,7 +4,11 @@ use_frameworks!
 inhibit_all_warnings!
 
 def regular_pods
+  
+  # Networking
    pod 'Moya', '~> 13.0.1'
+   pod 'ReachabilitySwift', '~> 4.3.1'
+   
 end
 
 target 'HostingApp' do
