@@ -15,15 +15,19 @@ class HostingAppViewController: UIViewController {
     @IBOutlet weak var wkWebView: WKWebView!
     @IBOutlet var stats: UILabel?
     
+    private let audioRecorder = AudioRecorder()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "pCloud"
         let url = URL(string: "https://www.pcloud.com/")
         wkWebView.load(URLRequest(url: url!))
+        
+        setupServices()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    private func setupServices() {
+        audioRecorder.setupAudioSession()
     }
     
 

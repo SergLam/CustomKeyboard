@@ -21,8 +21,10 @@ class LocalFileManager {
                                                     assertionFailure("Unable to get cache directory")
                                                     return nil
         }
-        let folderURL = cacheDirectory.appendingPathComponent(LocalFileManager.appCacheDirectoryName)
-        return manager.fileExists(atPath: folderURL.path) ? folderURL : nil
+        guard let subFolder = createSubFolderInCacheDirectory(folderName: LocalFileManager.appCacheDirectoryName) else {
+            return nil
+        }
+        return subFolder
     }
     
     func saveFileToCache(fileName: String, data: Data, fileType: CacheFileType) -> String? {

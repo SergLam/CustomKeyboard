@@ -12,7 +12,9 @@ import Foundation
 class AudioRecorder: NSObject {
     
     private var session: AVAudioSession
+    
     private var recorder: AVAudioRecorder?
+    private var currentRecordSaveURL: URL?
     
     private let fileManager = LocalFileManager()
     
@@ -23,7 +25,7 @@ class AudioRecorder: NSObject {
         super.init()
     }
     
-    private func setupAudioSession() {
+    func setupAudioSession() {
         
         do {
             try session.setCategory(.playAndRecord, mode: .default)
@@ -31,6 +33,7 @@ class AudioRecorder: NSObject {
             session.requestRecordPermission() { [weak self] allowed in
                 self?.isRecordingAllowed = allowed
                 guard allowed else { return }
+                self?.startRecording()
             }
         } catch {
             assertionFailure(error.localizedDescription)
@@ -40,7 +43,8 @@ class AudioRecorder: NSObject {
     func startRecording() {
         
         let fileName = "\(UUID().uuidString).\(CacheFileType.mp4Audio.rawValue)"
-        guard let audioFilename = fileManager.cacheDirectoryURL?.appendingPathComponent(fileName) else {
+        guard let audioFileURL = fileManager.cacheDirectoryURL?.appendingPathComponent(fileName) else {
+            assertionFailure("Unable to create file path")
             return
         }
 
@@ -52,11 +56,13 @@ class AudioRecorder: NSObject {
         ]
 
         do {
-            recorder = try AVAudioRecorder(url: audioFilename, settings: settings)
+            recorder = try AVAudioRecorder(url: audioFileURL, settings: settings)
             recorder?.delegate = self
             recorder?.record()
+            currentRecordSaveURL = audioFileURL
         } catch {
             assertionFailure(error.localizedDescription)
+            currentRecordSaveURL = nil
         }
     }
     
@@ -64,5 +70,15 @@ class AudioRecorder: NSObject {
 
 // MARK: - AVAudioRecorderDelegate
 extension AudioRecorder: AVAudioRecorderDelegate {
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        guard flag else { return }
+        recorder.stop()
+    }
+
+    func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
+        guard let error = error else { return }
+        assertionFailure(error.localizedDescription)
+    }
     
 }

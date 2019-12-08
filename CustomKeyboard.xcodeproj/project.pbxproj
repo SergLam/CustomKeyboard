@@ -38,11 +38,11 @@
 		4EF16F9619D255030076AFCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF16F9319D255030076AFCB /* Images.xcassets */; };
 		4EF16F9819D255030076AFCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9519D255030076AFCB /* ViewController.swift */; };
 		4EF16F9B19D2550D0076AFCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */; };
-		4EF16F9F19D2552E0076AFCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF16F9D19D2552E0076AFCB /* Main.storyboard */; };
 		7C108703239BC98800BAC6A2 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C108702239BC98800BAC6A2 /* AudioRecorder.swift */; };
 		7C1E8920239D8D36007B2E56 /* CalendarEventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E891F239D8D36007B2E56 /* CalendarEventManager.swift */; };
 		7C1E8922239D93D7007B2E56 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E8921239D93D7007B2E56 /* LocalFileManager.swift */; };
 		7C1E8925239D955C007B2E56 /* CacheFileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1E8924239D955C007B2E56 /* CacheFileType.swift */; };
+		7C1E892B239DA949007B2E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1E892A239DA949007B2E56 /* Main.storyboard */; };
 		7C4C6A1C239B9CAA003B29CC /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A1B239B9CAA003B29CC /* RequestManager.swift */; };
 		7C4C6A1F239B9E82003B29CC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A1E239B9E82003B29CC /* LocationManager.swift */; };
 		7C4C6A22239B9EE3003B29CC /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C6A21239B9EE3003B29CC /* BluetoothManager.swift */; };
@@ -129,7 +129,6 @@
 		4E60A13D1979FB2E00854CC8 /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionEnum.swift; sourceTree = "<group>"; };
 		4E6AEE4B19D246D700931E8F /* Catboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catboard.swift; sourceTree = "<group>"; };
 		4E7CDF921A079E3E0015BB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E7CDF931A079E3E0015BB90 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		4E807D9319461D9000D875D1 /* pCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E807DB919461DC700D875D1 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E807DBC19461DC700D875D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,11 +148,11 @@
 		4EF16F9319D255030076AFCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4EF16F9519D255030076AFCB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EF16F9E19D2552E0076AFCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		7C108702239BC98800BAC6A2 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		7C1E891F239D8D36007B2E56 /* CalendarEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventManager.swift; sourceTree = "<group>"; };
 		7C1E8921239D93D7007B2E56 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		7C1E8924239D955C007B2E56 /* CacheFileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFileType.swift; sourceTree = "<group>"; };
+		7C1E892A239DA949007B2E56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7C4C6A1B239B9CAA003B29CC /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		7C4C6A1E239B9E82003B29CC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7C4C6A21239B9EE3003B29CC /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -269,7 +268,6 @@
 		4E7CDF901A079E3E0015BB90 /* KeyboardSound */ = {
 			isa = PBXGroup;
 			children = (
-				4E7CDF931A079E3E0015BB90 /* KeyboardViewController.swift */,
 				4E7CDF911A079E3E0015BB90 /* Supporting Files */,
 			);
 			path = KeyboardSound;
@@ -309,27 +307,16 @@
 		4E807D9519461D9000D875D1 /* HostingApp */ = {
 			isa = PBXGroup;
 			children = (
+				7C1E8927239DA749007B2E56 /* UserStory */,
 				7C777098239709420013BC51 /* Extensions */,
 				7C777097239708300013BC51 /* Models */,
 				7C777093239708070013BC51 /* Protocols */,
 				7C77708E239705580013BC51 /* Services */,
+				7C1E8928239DA75F007B2E56 /* Resources */,
+				7C1E8926239DA72E007B2E56 /* BundleFiles */,
 				7CC1732723959E7E00859293 /* TODO */,
-				4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */,
-				4EF16F9519D255030076AFCB /* ViewController.swift */,
-				4EF16F9D19D2552E0076AFCB /* Main.storyboard */,
-				4EF16F9319D255030076AFCB /* Images.xcassets */,
-				4E807D9619461D9000D875D1 /* Supporting Files */,
 			);
 			path = HostingApp;
-			sourceTree = "<group>";
-		};
-		4E807D9619461D9000D875D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4EF16F9019D254E00076AFCB /* Background.jpg */,
-				4EF16F9219D254EA0076AFCB /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4E807DBA19461DC700D875D1 /* Keyboard */ = {
@@ -386,6 +373,33 @@
 				7C1E8924239D955C007B2E56 /* CacheFileType.swift */,
 			);
 			path = FileSystem;
+			sourceTree = "<group>";
+		};
+		7C1E8926239DA72E007B2E56 /* BundleFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4EF16F9A19D2550D0076AFCB /* AppDelegate.swift */,
+				7C1E892A239DA949007B2E56 /* Main.storyboard */,
+				4EF16F9219D254EA0076AFCB /* Info.plist */,
+			);
+			path = BundleFiles;
+			sourceTree = "<group>";
+		};
+		7C1E8927239DA749007B2E56 /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				4EF16F9519D255030076AFCB /* ViewController.swift */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		7C1E8928239DA75F007B2E56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4EF16F9019D254E00076AFCB /* Background.jpg */,
+				4EF16F9319D255030076AFCB /* Images.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		7C77708A2396F82E0013BC51 /* Network */ = {
@@ -595,8 +609,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1E892B239DA949007B2E56 /* Main.storyboard in Resources */,
 				4EF16F9619D255030076AFCB /* Images.xcassets in Resources */,
-				4EF16F9F19D2552E0076AFCB /* Main.storyboard in Resources */,
 				4EF16F9119D254E00076AFCB /* Background.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -786,18 +800,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		4EF16F9D19D2552E0076AFCB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4EF16F9E19D2552E0076AFCB /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../HostingApp/Base.lproj;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		4E807DAD19461D9000D875D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -912,8 +914,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_ASSET_PATHS = HostingApp/Resources/Images.xcassets;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
-				INFOPLIST_FILE = HostingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HostingApp/BundleFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -931,8 +934,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_ASSET_PATHS = HostingApp/Resources/Images.xcassets;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
-				INFOPLIST_FILE = HostingApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HostingApp/BundleFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,8 +953,9 @@
 			baseConfigurationReference = D32488FD75D599EC5A6E4006 /* Pods-Keyboard.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_ASSET_PATHS = Keyboard/Media.xcassets;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
-				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Keyboard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -969,8 +974,9 @@
 			baseConfigurationReference = DF58A163D52F467D31B997A6 /* Pods-Keyboard.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_ASSET_PATHS = Keyboard/Media.xcassets;
 				DEVELOPMENT_TEAM = MDWBDEPC5G;
-				INFOPLIST_FILE = Keyboard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Keyboard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
