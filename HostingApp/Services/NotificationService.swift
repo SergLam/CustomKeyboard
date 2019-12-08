@@ -10,11 +10,11 @@ import Foundation
 
 import UIKit
 
-// MARK: Since all socket data received through one event ('message') - best way to handle it for different screens and states - use notifications (or RxSwift)
 class NotificationService {
     
-    static let bundle = Bundle.main.bundleIdentifier ?? ""
     static let shared = NotificationService()
+    
+    static let bundle = Bundle.main.bundleIdentifier ?? "CustomKeyboard"
     
     func postNotification(name: NSNotification.Name, _ info: [String: Any]? = nil) {
         NotificationCenter.default.post(name: name, object: self, userInfo: info)
