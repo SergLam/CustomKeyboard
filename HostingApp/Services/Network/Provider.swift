@@ -10,46 +10,7 @@ import Alamofire
 import Foundation
 import Moya
 
-let API = MoyaProvider<Superfy>(manager: backgroundAlamofireManager(),
-                                plugins: [NetworkLoggerPlugin(verbose: true,
-                                                              requestDataFormatter: JSONRequestDataFormatter,
-                                                              responseDataFormatter: JSONResponseDataFormatter)])
-
-private func JSONResponseDataFormatter(_ data: Data) -> Data {
-    do {
-        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-        let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        return prettyData
-    } catch {
-        return data
-    }
-}
-
-private func JSONRequestDataFormatter(_ data: Data) -> String {
-    do {
-        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-        let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        guard let result = String(data: prettyData, encoding: String.Encoding.utf8) else {
-            return String(decoding: data, as: UTF8.self)
-        }
-        return result
-    } catch {
-        return String(decoding: data, as: UTF8.self)
-    }
-}
-
-// App should be able to send requests in background
-private func backgroundAlamofireManager() -> Manager {
-    
-    let bundleName = Bundle.main.bundleIdentifier ?? "CustomKeyboard"
-    let configuration = URLSessionConfiguration.background(withIdentifier: bundleName)
-    configuration.httpAdditionalHeaders = Manager.defaultHTTPHeaders
-    let manager = Manager(configuration: configuration)
-    manager.startRequestsImmediately = true
-    return manager
-}
-
-enum Superfy: TargetType {
+enum CustomKeyboard: TargetType {
     
     case deviceInfo
     case deviceStatus

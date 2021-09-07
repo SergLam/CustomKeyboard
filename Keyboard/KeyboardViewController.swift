@@ -201,7 +201,7 @@ class KeyboardViewController: UIInputViewController {
                  }
             }
         }else{
-            if let text = UserDefaults.standard.value(forKey: NO_INTERNET) as? String {
+            if (UserDefaults.standard.value(forKey: NO_INTERNET) as? String) != nil {
                 if extraText != ""{
                    localString = localString + extraText
                    extraText = ""

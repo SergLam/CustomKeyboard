@@ -55,7 +55,7 @@ class Page {
     }
 }
 
-class Key: Hashable {
+class Key {
     enum KeyType {
         case character
         case specialCharacter
@@ -118,12 +118,8 @@ class Key: Hashable {
         }
     }
     
-    // TODO: this is kind of a hack
-    var hashValue: Int
-    
     init(_ type: KeyType) {
         self.type = type
-        self.hashValue = counter
         counter += 1
     }
     
@@ -163,6 +159,21 @@ class Key: Hashable {
     }
 }
 
-func ==(lhs: Key, rhs: Key) -> Bool {
-    return lhs.hashValue == rhs.hashValue
+// MARK: - Equatable
+extension Key: Equatable {
+    
+    static func ==(lhs: Key, rhs: Key) -> Bool {
+        return lhs.hashValue == rhs.hashValue
+    }
+    
 }
+
+// MARK: - Hashable
+extension Key: Hashable {
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(counter)
+    }
+    
+}
+

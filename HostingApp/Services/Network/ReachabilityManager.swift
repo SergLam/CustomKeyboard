@@ -13,13 +13,13 @@ class ReachabilityManager: NSObject {
     
     static let shared = ReachabilityManager()
     
-    static let reachability = Reachability()!
+    static var reachability: Reachability? = try? Reachability()
     
     var isNetworkAvailable: Bool {
         return reachabilityStatus != .none
     }
     
-    var reachabilityStatus: Reachability.Connection = reachability.connection
+    var reachabilityStatus: Reachability.Connection = reachability?.connection ?? .unavailable
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -31,7 +31,7 @@ class ReachabilityManager: NSObject {
                                                name: Notification.Name.reachabilityChanged,
                                                object: ReachabilityManager.reachability)
         do{
-            try ReachabilityManager.reachability.startNotifier()
+            try ReachabilityManager.reachability?.startNotifier()
         } catch {
             assert(false, "Could not start reachability notifier")
         }
@@ -44,8 +44,8 @@ class ReachabilityManager: NSObject {
             return
         }
         switch reachability.connection {
-        case .none:
-            reachabilityStatus = .none
+        case .none, .unavailable:
+            reachabilityStatus = reachability.connection
             NotificationService.shared.postNotification(name: .socketLostConnection)
             
         case .wifi:
